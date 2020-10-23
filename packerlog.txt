@@ -1523,3 +1523,22 @@
 2020/10/23 16:54:41 1603468481,,ui,say,==> amazon-ebs: Creating AMI packer_prometheus 1603468309 from instance i-0b6ff8fffe99f5565
 2020/10/23 16:54:41 1603468481,,ui,message,    amazon-ebs: AMI: ami-021360454576db366
 2020/10/23 16:54:41 1603468481,,ui,say,==> amazon-ebs: Waiting for AMI to become ready...
+2020/10/23 16:56:28 1603468588,,ui,say,==> amazon-ebs: Terminating the source AWS instance...
+2020/10/23 16:56:43 1603468603,,ui,say,==> amazon-ebs: Cleaning up any extra volumes...
+2020/10/23 16:56:43 1603468603,,ui,say,==> amazon-ebs: No volumes to clean up%!(PACKER_COMMA) skipping
+2020/10/23 16:56:43 1603468603,,ui,say,==> amazon-ebs: Deleting temporary security group...
+2020/10/23 16:56:44 1603468604,,ui,say,==> amazon-ebs: Deleting temporary keypair...
+2020/10/23 16:56:44 [INFO] (telemetry) ending amazon-ebs
+2020/10/23 16:56:44 1603468604,,ui,say,Build 'amazon-ebs' finished.
+2020/10/23 16:56:44 1603468604,,ui,say,\n==> Builds finished. The artifacts of successful builds are:
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact-count,1
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact,0,builder-id,mitchellh.amazonebs
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact,0,id,eu-west-2:ami-021360454576db366
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact,0,string,AMIs were created:\neu-west-2: ami-021360454576db366\n
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact,0,files-count,0
+2020/10/23 16:56:44 1603468604,amazon-ebs,artifact,0,end
+2020/10/23 16:56:44 1603468604,,ui,say,--> amazon-ebs: AMIs were created:\neu-west-2: ami-021360454576db366\n
+2020/10/23 16:56:44 [INFO] (telemetry) Finalizing.
+2020/10/23 16:56:44 waiting for all plugin processes to complete...
+2020/10/23 16:56:44 /usr/local/bin/packer: plugin process exited
+2020/10/23 16:56:44 /usr/local/bin/packer: plugin process exited
