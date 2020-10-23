@@ -1,6 +1,6 @@
 # Local .terraform directories
 **/.terraform/*
-
+*olukey.*
 # .tfstate files
 *.tfstate
 *.tfstate.*
