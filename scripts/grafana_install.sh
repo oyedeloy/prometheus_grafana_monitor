@@ -1,7 +1,7 @@
 #!/bin/bash 
 sudo apt update -y
-sudo apt-get install -y docker
-sudo usermod -aG docker ec2-user
+sudo apt  install docker.io
+sudo usermod -aG docker ubuntu
 sudo service docker start
-sudo chkconfig docker on
+sudo systemctl enable docker
 sudo docker run -d  --name grafana  -p 3000:3000  grafana/grafana

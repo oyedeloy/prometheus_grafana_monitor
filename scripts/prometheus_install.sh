@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo apt update -y
-sudo apt-get install -y docker
-sudo usermod -aG docker ec2-user
+sudo apt  install docker.io
+sudo usermod -aG docker ubuntu
 sudo service docker start
-sudo chkconfig docker on
-sudo docker run -d -it -p 9090:9090 --name prometheus prom/prometheu
+sudo systemctl enable docker
+sudo docker run -d -it -p 9090:9090 --name prometheus prom/prometheus
