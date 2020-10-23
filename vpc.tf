@@ -16,7 +16,8 @@ module "vpc" {
   enable_dns_hostnames = true
   enable_dns_support   = true         
   enable_ec2_endpoint              = true
-  ec2_endpoint_private_dns_enabled = true                                                                          #"10.8.101.0/24", "10.8.102.0/24", "10.8.103.0/24"]
+  ec2_endpoint_private_dns_enabled = true   
+  ec2_endpoint_security_group_ids  = [data.aws_security_group.default.id]                                                                       #"10.8.101.0/24", "10.8.102.0/24", "10.8.103.0/24"]
 
   enable_nat_gateway = false
   enable_vpn_gateway = false
